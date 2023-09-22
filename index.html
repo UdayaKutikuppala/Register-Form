@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script>
+        function f1(){
+            alert("Hi welcome to javascript")
+        }
+    </script> -->
+    <link rel="stylesheet" href="style.css">
+    <script src="/app.js"></script>
+</head>
+<body>
+    <button onclick='f1()'>Click me</button>
+    <script>
+        var x= [2000,2015,2018,1999]
+        var ages= x.map(function(ele,index,array){
+            let age=2023-ele
+            return age
+        })
+        console.log(ages)
+            let places=["vizag","vijayawada","hyd", "delhi"]
+        var place=places.filter((ele)=>{
+            return ele.startsWith("v")
+        })
+        console.log(place)
+        let marks=[77,33,80,68,32]
+        var mark=marks.every((ele)=>{
+            return ele>=35
+
+        })
+        console.log(mark)
+
+
+
+        var arr=[76,44,97,35,43]
+        console.log(...arr)
+
+        var arr2=[3,4,...arr]
+        console.log(arr2)
+    </script>
+
+</body>
+</html>
